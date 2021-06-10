@@ -59,12 +59,7 @@ async def auto_filter(bot, update):
     
     filters = await db.get_filters(group_id, query)
     
-    if filters:
-      
-                [
-                    InlineKeyboardButton("💢 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 💢", url=f"https://t.me/Cinemahub182")
-                ]
-            
+    if filters:             
         for filter in filters: # iterating through each files
             file_name = filter.get("file_name")
             file_type = filter.get("file_type")
