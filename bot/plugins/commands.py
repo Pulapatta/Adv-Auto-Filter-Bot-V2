@@ -65,7 +65,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '😃 Developer 😃', url="https://t.me/Anandhukuttu"
+                                    '🎖 Share Group 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
                                 )
                         ]
                     ]
@@ -84,7 +84,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '😃 Developer 😃', url="https://t.me/Anandhukuttu"
+                                    '🎖 Share Group 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
                                 )
                         ]
                     ]
@@ -103,7 +103,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '😃 Developer 😃', url="https://t.me/Anandhukuttu"
+                                    '🎖 Share Group 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
                                 )
                         ]
                     ]
