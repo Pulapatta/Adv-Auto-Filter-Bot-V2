@@ -67,9 +67,11 @@ Join on our channel to get movies ✅
                                 (
                                     '🎖 Share Group 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
                                 )
-                            InlineKeyboardButton
+                        ]
+                        [
+                             InlineKeyboardButton
                                 (
-                                    '🎖 Share Group 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
+                                    '🎖 Share Grou 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
                                 )
                         ]
                     ]
