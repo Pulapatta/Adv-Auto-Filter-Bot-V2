@@ -58,7 +58,6 @@ Join on our channel to get movies ✅
                 chat_id=update.chat.id,
                 document = file_id,
                 caption = caption\n▱▰▱▰▱▰▱▰▱▰▱▰▱▰\n➠ɢʀᴏᴜᴘ   : @Cinemahub182 🍿\n➠ɢʀᴏᴜᴘ   : @Cinemahub182 🍿\n➥ᴄʜᴀɴɴᴇʟ: @cinemAhub186 :fire:\n⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉\n🎗 ʝσιи 🎗 ѕнαяє🎗 ѕυρρσят 🎗,
-,
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
