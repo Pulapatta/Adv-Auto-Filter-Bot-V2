@@ -48,11 +48,11 @@ class Translation(object):
     
     ABOUT_TEXT = """<b>➥ My Name</b> : <code> Auto Filter Bot</code>
     
-<b>➥ My Creator</b> : <b><i><a href="https://t.me/Anandhukuttu">Anandhu</a></i></b>
+<b>➥ My Creator</b> : <b><i><a href="https://t.me/hindinewmoviesdo">RAFEEQ</a></i></b>
 
 <b>➥ My Language</b> : <code>Python3</code>
 
 <b>➥ My Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
 
-<b>➥ Source Code</b> : <i><a href="https://github.com/Anandhu123555/Autofilter-look">Click Me</a></i>
+<b>➥ Source Code</b> : <i><a href="https://t.me/hindinewmoviesdo">Click Me</a></i>
 """
