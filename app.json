@@ -30,6 +30,10 @@
         "USER_SESSION": {
             "description": "A Pyrogram User Session String. Generated From @PyrogramStringBot",
             "value": ""
+        },
+        "FORCESUB_CHANNEL": {
+            "description": "give the force subscription channel user name  here",
+            "value": ""
         }
     },
     "buildpacks": [
