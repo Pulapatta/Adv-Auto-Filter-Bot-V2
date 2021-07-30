@@ -117,7 +117,7 @@ Join on our channel to get movies ✅
         InlineKeyboardButton('My Developer', url='https://t.me/Anandhukuttu'),
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Anandhu123555/Autofilter-look')
     ],[
-        InlineKeyboardButton('Our Group 🛠', url='https://t.me/Cinemahub182')
+        InlineKeyboardButton('Support🛠', url='https://t.me/Cinemahub182')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
