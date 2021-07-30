@@ -62,7 +62,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 Join Group 🎖', url="https://t.me/Cinemahub182"
+                                    '🎖 Join our Group 🎖', url="https://t.me/Cinemahub182"
                                 )
                         ],
                         [
@@ -88,7 +88,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 Join Group 🎖', url="https://t.me/Cinemahub182"
+                                    '🎖 Join our Group 🎖', url="https://t.me/Cinemahub182"
                                 )
                         ],
                         [
@@ -113,7 +113,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 join Group 🎖', url="https://t.me/Cinemahub182"
+                                    '🎖 join our Group 🎖', url="https://t.me/Cinemahub182"
                                 )
                         ],
                         [
