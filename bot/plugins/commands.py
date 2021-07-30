@@ -62,13 +62,13 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 Share Group 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
+                                    '🎖 Join Group 🎖', url="https://t.me/Cinemahub182"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 tester 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub180"
+                                    '🎖 Share Group 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
                                 )
                         ]
                        
@@ -88,6 +88,12 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
+                                    '🎖 Join Group 🎖', url="https://t.me/Cinemahub182"
+                                )
+                        ],
+                        [
+                            InlineKeyboardButton
+                                (
                                     '🎖 Share Group 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
                                 )
                         ]
@@ -104,6 +110,12 @@ Join on our channel to get movies ✅
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
+                        [
+                            InlineKeyboardButton
+                                (
+                                    '🎖 join Group 🎖', url="https://t.me/Cinemahub182"
+                                )
+                        ],
                         [
                             InlineKeyboardButton
                                 (
