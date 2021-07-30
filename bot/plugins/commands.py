@@ -54,7 +54,7 @@ Join on our channel to get movies ✅
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182</b>♻️",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182</b>",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -63,6 +63,12 @@ Join on our channel to get movies ✅
                             InlineKeyboardButton
                                 (
                                     '🎖 Share Group 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
+                                )
+                        ],
+                        [
+                            InlineKeyboardButton
+                                (
+                                    '🎖 tester 🎖', url="https://t.me/share/url?url=https://t.me/Cinemahub180"
                                 )
                         ]
                        
@@ -75,7 +81,7 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182♻️</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -94,7 +100,7 @@ Join on our channel to get movies ✅
             await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182♻️</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
