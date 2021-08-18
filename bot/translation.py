@@ -31,7 +31,7 @@ class Translation(object):
     
     HELP_TEXT = """
 <i>
--> 🤖 This,bot,No,Use,another,group👨‍💼
+ 🤖 This,bot,No,Use,another,group👨‍💼
 
 
 
