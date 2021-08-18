@@ -29,7 +29,7 @@ async def start(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @MovieRosters</b>",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -37,13 +37,13 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 Join our Group 🎖', url="https://t.me/Cinemahub182"
+                                    '👑 Join our Group 👑', url="https://t.me/MovieRosters"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
+                                    '🎀 Share Group 🎀', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
                                 )
                         ]
                        
@@ -56,20 +56,20 @@ async def start(bot, update):
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @MovieRosters</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 Join our Group 🎖', url="https://t.me/Cinemahub182"
+                                    '🔱 Join our Channel 🔱', url="https://t.me/HollywoodAre"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
+                                    '🎀 Join Our Group 🎀', url="https://t.me/MovieRosters"
                                 )
                         ]
                     ]
@@ -81,20 +81,20 @@ async def start(bot, update):
             await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Cinemahub182</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @MovieRosters</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 join our Group 🎖', url="https://t.me/Cinemahub182"
+                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/Cinemahub182"
+                                    '🔱 Join Our Channel 🔱', url="https://t.me/HollywoodAre"
                                 )
                         ]
                     ]
