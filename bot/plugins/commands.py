@@ -43,8 +43,19 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎀 Share Group 🎀', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
+                                    '🧩 Share Group  🧩', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
                                 )
+                        ]
+                        [.   [
+
+                            InlineKeyboardButton
+
+                                (
+
+                                    '🔱 Join our Channel 🔱', url="https://t.me/HollywoodAre"
+
+                                )
+
                         ]
                        
                     ]
@@ -63,14 +74,25 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🔱 Join our Channel 🔱', url="https://t.me/HollywoodAre"
+                                    '👑 Join our Group 👑', url="https://t.me/https://t.me/MovieRosters"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎀 Join Our Group 🎀', url="https://t.me/MovieRosters"
+                                    '🧩 Share Group  🧩', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
                                 )
+                        ]
+                        [.   [
+
+                            InlineKeyboardButton
+
+                                (
+
+                                    '🔱 Join our Channel 🔱', url="https://t.me/HollywoodAre"
+
+                                )
+
                         ]
                     ]
                 )
@@ -88,15 +110,27 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
+                                    '👑 Join our Group 👑', url="https://t.me/MovieRosters"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🔱 Join Our Channel 🔱', url="https://t.me/HollywoodAre"
+                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
                                 )
                         ]
+                        [. [
+
+                            InlineKeyboardButton
+
+                                (
+
+                                    '🔱 Join Or Channel 🔱', url="https://t.me/HollywoodAre"
+
+                                )
+
+                        ]
+                        
                     ]
                 )
             )
