@@ -107,10 +107,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('My Developer', url='https://t.me/Anandhukuttu'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Anandhu123555/Autofilter-look')
+        InlineKeyboardButton('My Developer', url='https://t.me/hindinewmoviesdo'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Pulapatta/Right')
     ],[
-        InlineKeyboardButton('Support🛠', url='https://t.me/Cinemahub182')
+        InlineKeyboardButton('Support🛠', url='https://t.me/MovieRosters')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
