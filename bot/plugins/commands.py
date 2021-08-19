@@ -43,7 +43,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎀 Share Group 🎀', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
+                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
                                 )
                         ],
                         [
@@ -80,7 +80,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎀 Share Group 🎀', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
+                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
                                 )
                         ],
                         [
@@ -116,7 +116,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎀 Share Group 🎀', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
+                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://https://t.me/MovieRosters"
                                 )
                         ],
                         [
