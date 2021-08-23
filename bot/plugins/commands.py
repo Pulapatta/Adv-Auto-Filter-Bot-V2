@@ -54,8 +54,7 @@ Join on our channel to get movies ✅
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @MovieRosters</b>",
-                 caption =f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Hollywoodare</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @MovieRosters</b>",f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Hollywoodare\n \n♻️Join with us: @Hollywoodare</b>",                
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -93,8 +92,7 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @MovieRosters</b>",
-                 caption =f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Hollywoodare</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @MovieRosters</b>",f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Hollywoodare\n \n♻️Join with us: @Hollywoodare</b>",                 
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -130,8 +128,7 @@ Join on our channel to get movies ✅
             await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @MovieRosters</b>",
-                 caption =f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Hollywoodare</b>",
+                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @MovieRosters</b>",f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Hollywoodare\n \n♻️Join with us: @Hollywoodare</b>",                
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
