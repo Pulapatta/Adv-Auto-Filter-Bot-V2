@@ -166,9 +166,9 @@ Join on our channel to get movies ✅
 
     buttons = [[
         InlineKeyboardButton('🎯Group🎯', url='https://t.me/MovieRosters'),
-        InlineKeyboardButton('🎯Channel²🎯', url ='https://t.me/joinchat/n-oJib_FkP8yNGY9')
+        InlineKeyboardButton('🎯Channel🎯', url ='https://t.me/HollywoodAre')
     ],[
-        InlineKeyboardButton('🎯Channel🎯', url='https://t.me/HollywoodAre')
+        InlineKeyboardButton('🎯Channel²🎯', url='https://t.me/joinchat/n-oJib_FkP8yNGY9')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
