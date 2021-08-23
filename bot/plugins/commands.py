@@ -62,7 +62,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '👑 Join Our Group 👑', url="https://t.me/MovieRosters"
+                                    '🌟 Join Our Group 🌟', url="https://t.me/MovieRosters"
                                 )
                         ],
                         [
@@ -77,7 +77,7 @@ Join on our channel to get movies ✅
 
                                 (
 
-                                    '🔱 Join Our Channel 🔱', url="https://t.me/HollywoodAre"
+                                    '⚜️ Join Our Channel ⚜️', url="https://t.me/HollywoodAre"
 
                                 )
 
@@ -99,7 +99,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '👑 Join Our Group 👑', url="https://t.me/MovieRosters"
+                                    '🌟 Join Our Group 🌟', url="https://t.me/MovieRosters"
                                 )
                         ],
                         [
@@ -114,7 +114,7 @@ Join on our channel to get movies ✅
 
                                 (
 
-                                    '🔱 Join Our Channel 🔱', url="https://t.me/HollywoodAre"
+                                    '⚜️ Join Our Channel ⚜️', url="https://t.me/HollywoodAre"
 
                                 )
 
@@ -135,7 +135,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '👑 Join Our Group 👑', url="https://t.me/MovieRosters"
+                                    '🌟 Join Our Group 🌟', url="https://t.me/MovieRosters"
                                 )
                         ],
                         [
@@ -150,7 +150,7 @@ Join on our channel to get movies ✅
 
                                 (
 
-                                    '🔱 Join Our Channel 🔱', url="https://t.me/HollywoodAre"
+                                    '⚜️ Join Our Channel ⚜️', url="https://t.me/HollywoodAre"
 
                                 )
 
