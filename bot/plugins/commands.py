@@ -8,32 +8,33 @@ from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
 from pyrogram.errors import UserNotParticipant
 from bot import FORCESUB_CHANNEL
+
 db = Database()
 
-@Client.on_message(filters.command(["start"]) & filters.private, group=1)
+@Client.on_message(filters.command(["start"]) & filters.private, group=1) 
 async def start(bot, update): 
-     update_channel = FORCESUB_CHANNEL
-    if update_channel:
-        try:
-            user = await bot.get_chat_member(update_channel, update.chat.id)
-            if user.status == "kicked":
-               await update.reply_text("🤭 Sorry Dude, You are **B A N N E D 🤣🤣🤣**")
-               return
-        except UserNotParticipant:
-            #await update.reply_text(f"Join @{update_channel} To Use Me")
-            await update.reply_text(
-                text=""" <b> 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭.
-നിങ്ങൾക്ക് മൂവീസ് വേണോ? എങ്കിൽ താഴെ കാണുന്ന ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക.❤️
-എന്നിട്ട് ഗ്രൂപ്പിൽ പോയി വീണ്ടും മൂവിയിൽ ക്ലിക് ചെയ്ത് start കൊടുത്തു നോക്കൂ..!😁
-
-⚠️YOU ARE NOT SUBSCRIBED OUR CHANNEL⚠️
-
-Join on our channel to get movies ✅
-⬇️Channel link⬇️ </b>""",
-                reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="⚡ Join My Channel⚡️", url=f"https://t.me/{update_channel}")]
-              ])
-            )
+    update_channel = FORCESUB_CHANNEL 
+    if update_channel: 
+        try: 
+            user = await bot.get_chat_member(update_channel, update.chat.id) 
+            if user.status == "kicked": 
+               await update.reply_text("🤭 Sorry Dude, You are B A N N E D 🤣🤣🤣") 
+               return 
+        except UserNotParticipant: 
+            #await update.reply_text(f"Join @{update_channel} To Use Me") 
+            await update.reply_text( 
+                text=""" <b> 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭. 
+Do you want Movies? If u want Movies Join our main Channel.❤️ 
+Then go to the Group and click movie button, You Will get ..!😁 
+ 
+⚠️YOU ARE NOT SUBSCRIBED OUR CHANNEL⚠️ 
+ 
+Join on our channel to get movies ✅ 
+⬇️Channel link⬇️ </b>""", 
+                reply_markup=InlineKeyboardMarkup([ 
+                    [ InlineKeyboardButton(text="⚡ Join My Channel⚡️", url=f"https://t.me/{update_channel}")] 
+              ]) 
+            ) 
             return
     try:
         file_uid = update.command[1]
