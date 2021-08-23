@@ -165,10 +165,10 @@ Join on our channel to get movies ✅
         return
 
     buttons = [[
-        InlineKeyboardButton('My Developer', url='https://t.me/hindinewmoviesdo'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Pulapatta/Right')
+        InlineKeyboardButton('🎯Group🎯', url='https://t.me/MovieRosters'),
+        InlineKeyboardButton('🎯Channel²🎯', url ='https://t.me/joinchat/n-oJib_FkP8yNGY9')
     ],[
-        InlineKeyboardButton('Support🛠', url='https://t.me/MovieRosters')
+        InlineKeyboardButton('🎯Channel🎯', url='https://t.me/HollywoodAre')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
