@@ -6,15 +6,12 @@ class Translation(object):
     
     START_TEXT = """<b>Hey {} How are You!!</b>
 <i>
-Am Just A Advance Auto Filter Bot....😉
+നീ ഏതാ മോനൂസെ എന്നെ
+𝗠𝗼𝘃𝗶𝗲 Roster ഗ്രൂപ്പിൽ മാത്രമേ
+ഉപയോഗിക്കാൻ പറ്റൂ...
 
-You are not  able to add me to your group...😐
-But you can able to create me.......😍
-
-The code of this bot was edited by:--> @hindinewmoviesdo ⚜
-Only editer not auther.......😅😅😅
-
-You are able to contact me:--> @hindinewmoviesdo
+@hindinewmoviesdo ആണ് എന്റെ
+മുതലാളി. 🤭
 </i>"""
 
 
@@ -22,8 +19,7 @@ You are able to contact me:--> @hindinewmoviesdo
     
     HELP_TEXT = """
 <i>
- 🤖 This,bot,No,Use,another,group👨‍💼
-
+ I Can't help you
 
 
 """
