@@ -19,7 +19,7 @@ class Translation(object):
     
     HELP_TEXT = """
 <i>
- I Can't help you
+ 𝙄 𝘾𝙖𝙣'𝙩 𝙝𝙚𝙡𝙥 𝙮𝙤𝙪
 
 
 """
