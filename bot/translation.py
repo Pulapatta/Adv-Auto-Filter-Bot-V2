@@ -26,7 +26,7 @@ class Translation(object):
     
     ABOUT_TEXT = """<b>➥ My Name</b> : <code> Auto Filter Bot</code>
     
-<b>➥ My Creator</b> : <b><i><a href="https://t.me/hindinewmoviesdo">hindinewmoviesdo</a></i></b>
+<b>➥ My Creator</b> : <b><i><a href="https://t.me/Rafeeq_Kunnimon">Rafeeq_Kunnimon</a></i></b>
 
 <b>➥ My Language</b> : <code>Python3</code>
 
