@@ -170,9 +170,10 @@ Join on our channel to get movies ✅
     ],[
         InlineKeyboardButton('🎯𝕮𝖍𝖆𝖓𝖓𝖊𝖑²🎯', url='https://t.me/joinchat/n-oJib_FkP8yNGY9')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
+        InlineKeyboardButton('🎯 𝕸𝖞 𝕯𝖊𝖛𝖊𝖑𝖔𝖕𝖊𝖗 🎯', url='https://t.me/Rafeeq_Kunnimon' )
+    ],[
+        InlineKeyboardButton('Help ⚙', callback_data="help")   
     ]]
-    
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_message(
