@@ -62,7 +62,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸' , url="https://t.me/MovieRosters"
+                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸' , url="https://t.me/MovieRosterGroup"
                                 )
                         ],
                         [
@@ -99,7 +99,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸', url="https://t.me/MovieRosters"
+                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸', url="@MovieRosterGroup"
                                 )
                         ],
                         [
@@ -135,7 +135,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸', url="https://t.me/MovieRosters"
+                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸', url="https://t.me/MovieRosterGroup"
                                 )
                         ],
                         [
@@ -165,7 +165,7 @@ Join on our channel to get movies ✅
         return
 
     buttons = [[
-        InlineKeyboardButton('🎯ɢʀᴏᴜᴘ🎯', url='https://t.me/MovieRosters'),
+        InlineKeyboardButton('🎯ɢʀᴏᴜᴘ🎯', url='https://t.me/MovieRosterGroup'),
         InlineKeyboardButton('🎯ᴄʜᴀɴɴᴇʟ🎯', url ='https://t.me/HollywoodAre')
     ],[
         InlineKeyboardButton('🎯ᴄʜᴀɴɴᴇʟ²🎯', url='https://t.me/joinchat/n-oJib_FkP8yNGY9')
