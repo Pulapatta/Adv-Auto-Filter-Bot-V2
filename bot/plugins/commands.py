@@ -62,13 +62,13 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎸 Join Our Group 🎸', url="https://t.me/MovieRosters"
+                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸' , url="https://t.me/MovieRosters"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/MovieRosters"
+                                    '🧩 𝚂𝚑𝚊𝚛𝚎 𝙶𝚛𝚘𝚞𝚙 🧩 ', url="https://t.me/share/url?url=https://t.me/MovieRosters"
                                 )
                         ],
                         [
@@ -77,7 +77,7 @@ Join on our channel to get movies ✅
 
                                 (
 
-                                    '💋 New Movies 💋', url="https://t.me/HollywoodAre"
+                                    '💋 𝙽𝚎𝚠 𝙼𝚘𝚟𝚒𝚎𝚜 💋', url="https://t.me/HollywoodAre"
 
                                 )
 
@@ -99,13 +99,13 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎸 Join Our Group 🎸', url="https://t.me/MovieRosters"
+                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸', url="https://t.me/MovieRosters"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/MovieRosters"
+                                    '🧩 𝚂𝚑𝚊𝚛𝚎 𝙶𝚛𝚘𝚞𝚙 🧩 ', url="https://t.me/share/url?url=https://t.me/MovieRosters"
                                 )
                         ],
                         [
@@ -114,7 +114,7 @@ Join on our channel to get movies ✅
 
                                 (
 
-                                    '💋 New Movies 💋', url="https://t.me/HollywoodAre"
+                                    '💋 𝙽𝚎𝚠 𝙼𝚘𝚟𝚒𝚎𝚜 💋', url="https://t.me/HollywoodAre"
 
                                 )
 
@@ -135,13 +135,13 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎸 Join Our Group 🎸', url="https://t.me/MovieRosters"
+                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸', url="https://t.me/MovieRosters"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/MovieRosters"
+                                    '🧩 𝚂𝚑𝚊𝚛𝚎 𝙶𝚛𝚘𝚞𝚙 🧩 ', url="https://t.me/share/url?url=https://t.me/MovieRosters"
                                 )
                         ],
                         [
@@ -150,7 +150,7 @@ Join on our channel to get movies ✅
 
                                 (
 
-                                    '💋 New Movies 💋', url="https://t.me/HollywoodAre"
+                                    '💋 𝙽𝚎𝚠 𝙼𝚘𝚟𝚒𝚎𝚜 💋', url="https://t.me/HollywoodAre"
 
                                 )
 
