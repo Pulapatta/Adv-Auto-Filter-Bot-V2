@@ -165,12 +165,12 @@ Join on our channel to get movies ✅
         return
 
     buttons = [[
-        InlineKeyboardButton('🎯ɢʀᴏᴜᴘ🎯', url='https://t.me/MovieRosterGroup'),
-        InlineKeyboardButton('🎯ᴄʜᴀɴɴᴇʟ🎯', url ='https://t.me/HollywoodAre')
+        InlineKeyboardButton('🎯𝘎𝘳𝘰𝘶𝘱🎯', url='https://t.me/MovieRosterGroup'),
+        InlineKeyboardButton('🎯𝘊𝘩𝘢𝘯𝘯𝘦𝘭🎯', url ='https://t.me/HollywoodAre')
     ],[
-        InlineKeyboardButton('🎯ᴄʜᴀɴɴᴇʟ²🎯', url='https://t.me/joinchat/n-oJib_FkP8yNGY9')
+        InlineKeyboardButton('🎯𝘊𝘩𝘢𝘯𝘯𝘦𝘭²🎯, url='https://t.me/joinchat/n-oJib_FkP8yNGY9')
     ],[
-        InlineKeyboardButton('🎯My Developer🎯', url='https://t.me/Rafeeq_Kunnimon' )
+        InlineKeyboardButton('🎯𝘔𝘺 𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳🎯', url='https://t.me/Rafeeq_Kunnimon' )
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")   
     ]]
