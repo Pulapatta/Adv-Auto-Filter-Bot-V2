@@ -4,38 +4,14 @@
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from bot import Translation # pylint: disable=import-error
+from bot import Translation, LOGGER # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
-from pyrogram.errors import UserNotParticipant
-from bot import FORCESUB_CHANNEL
 
 db = Database()
 
-@Client.on_message(filters.command(["start"]) & filters.private, group=1) 
-async def start(bot, update): 
-    update_channel = FORCESUB_CHANNEL 
-    if update_channel: 
-        try: 
-            user = await bot.get_chat_member(update_channel, update.chat.id) 
-            if user.status == "kicked": 
-               await update.reply_text("🤭 Sorry Dude, You are B A N N E D 🤣🤣🤣") 
-               return 
-        except UserNotParticipant: 
-            #await update.reply_text(f"Join @{update_channel} To Use Me") 
-            await update.reply_text( 
-                text=""" <b> 🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭. 
-Do you want Movies? If u want Movies Join our main Channel.❤️ 
-Then go to the Group and click movie button, You Will get ..!😁 
- 
-⚠️YOU ARE NOT SUBSCRIBED OUR CHANNEL⚠️ 
- 
-Join on our channel to get movies ✅ 
-⬇️Channel link⬇️ </b>""", 
-                reply_markup=InlineKeyboardMarkup([ 
-                    [ InlineKeyboardButton(text="⚡ Join My Channel⚡️", url=f"https://t.me/{update_channel}")] 
-              ]) 
-            ) 
-            return
+@Client.on_message(filters.command(["start"]) & filters.private, group=1)
+async def start(bot, update):
+    
     try:
         file_uid = update.command[1]
     except IndexError:
@@ -48,137 +24,50 @@ Join on our channel to get movies ✅
             return
         
         caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
-        
-        if file_type == "document":
-        
-            await bot.send_document(
-                chat_id=update.chat.id,
-                document = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>➖ @MovieRosterOfficial ➖</b>",                
-                parse_mode="html",
-                reply_to_message_id=update.message_id,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸' , url="https://t.me/MovieRosterGroup"
-                                )
-                        ],
-                        [
-                            InlineKeyboardButton
-                                (
-                                    '🧩 𝚂𝚑𝚊𝚛𝚎 𝙶𝚛𝚘𝚞𝚙 🧩 ', url="https://t.me/share/url?url=https://t.me/MovieRosterGroup"
-                                )
-                        ],
-                        [
-
-                            InlineKeyboardButton
-
-                                (
-
-                                    '💋 𝙽𝚎𝚠 𝙼𝚘𝚟𝚒𝚎𝚜 💋', url="https://t.me/HollywoodAre"
-
-                                )
-
-                        ]
-                       
-                    ]
-                )
-            )
-
-        elif file_type == "video":
-        
-            await bot.send_video(
-                chat_id=update.chat.id,
-                video = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>➖ @MovieRosterOfficial ➖</b>",                 
+        try:
+            await update.reply_cached_media(
+                file_id,
+                quote=True,
+                caption = f"<b>{file_name}</b>\n \n<b>┈••✿ @beast_boys ✿••┈</b>\n \n<b>➠𝐂ʜᴀɴɴᴇʟ : @beast_boys007</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸', url="@MovieRosterGroup"
+                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/MovieRosterGroup"
                                 )
                         ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '🧩 𝚂𝚑𝚊𝚛𝚎 𝙶𝚛𝚘𝚞𝚙 🧩 ', url="https://t.me/share/url?url=https://t.me/MovieRosterGroup"
+                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/MovieRosterOfficial"
                                 )
-                        ],
-                        [
-
-                            InlineKeyboardButton
-
-                                (
-
-                                    '💋 𝙽𝚎𝚠 𝙼𝚘𝚟𝚒𝚎𝚜 💋', url="https://t.me/HollywoodAre"
-
-                                )
-
-                        ]
+                        ] 
                     ]
                 )
             )
-            
-        elif file_type == "audio":
-        
-            await bot.send_audio(
-                chat_id=update.chat.id,
-                audio = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>➖ @MovieRosterOfficial ➖</b>",                
-                parse_mode="html",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    '🎸 𝙹𝚘𝚒𝚗 𝙾𝚞𝚛 𝙶𝚛𝚘𝚞𝚙 🎸', url="https://t.me/MovieRosterGroup"
-                                )
-                        ],
-                        [
-                            InlineKeyboardButton
-                                (
-                                    '🧩 𝚂𝚑𝚊𝚛𝚎 𝙶𝚛𝚘𝚞𝚙 🧩 ', url="https://t.me/share/url?url=https://t.me/MovieRosterGroup"
-                                )
-                        ],
-                        [
-
-                            InlineKeyboardButton
-
-                                (
-
-                                    '💋 𝙽𝚎𝚠 𝙼𝚘𝚟𝚒𝚎𝚜 💋', url="https://t.me/HollywoodAre"
-
-                                )
-
-                        ]
-                    ]
-                )
-            )
-
-        else:
-            print(file_type)
-        
+        except Exception as e:
+            await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode="html")
+            LOGGER(__name__).error(e)
         return
 
     buttons = [[
-        InlineKeyboardButton('🎯𝘎𝘳𝘰𝘶𝘱🎯', url='https://t.me/MovieRosterGroup'),
-        InlineKeyboardButton('🎯𝘊𝘩𝘢𝘯𝘯𝘦𝘭🎯', url ='https://t.me/HollywoodAre')
+        InlineKeyboardButton('🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url='https://t.me/Lucifer_Devil_AD'),
+        InlineKeyboardButton('⚠️ 𝙂𝙍𝙊𝙐𝙋', url ='https://t.me/MovieRosterGroup')
     ],[
-        InlineKeyboardButton('🎯𝘊𝘩𝘢𝘯𝘯𝘦𝘭²🎯', url='https://t.me/joinchat/n-oJib_FkP8yNGY9')
+        InlineKeyboardButton('♻️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ♻️', url='https://t.me/MovieRosterOfficial')
     ],[
-        InlineKeyboardButton('🎯𝘔𝘺 𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳🎯', url='https://t.me/Rafeeq_Kunnimon' )
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")   
-    ]]
+        InlineKeyboardButton('💡 𝙃𝙀𝙇𝙋', callback_data="help"),
+        InlineKeyboardButton('🔐 𝘾𝙇𝙊𝙎𝙀', callback_data="close")
+       ]]
+    
     reply_markup = InlineKeyboardMarkup(buttons)
     
-    await bot.send_message(
+    await bot.send_photo(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(
+        photo="https://telegra.ph/file/abdea39086bcffb2ea6ae.jpg",
+        caption=Translation.START_TEXT.format(
                 update.from_user.first_name),
         reply_markup=reply_markup,
         parse_mode="html",
@@ -189,10 +78,10 @@ Join on our channel to get movies ✅
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('About 🚩', callback_data='about')
+        InlineKeyboardButton('𝙃𝙊𝙈𝙀 ⚡', callback_data='start'),
+        InlineKeyboardButton('𝘼𝘽𝙊𝙐𝙏 🚩', callback_data='about')
     ],[
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀 🔐', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -210,8 +99,8 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('𝙃𝙊𝙈𝙀 ⚡', callback_data='start'),
+        InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀 🔐', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     
