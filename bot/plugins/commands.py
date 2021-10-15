@@ -28,14 +28,14 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us: @Hollywoodare\n \n♻️Join with us: @Hollywoodare</b>",
+                caption = f"<b>{file_name}</b>\n \n<b>┈••✿ @beast_boys ✿••┈</b>\n \n<b>➠𝐂ʜᴀɴɴᴇʟ : @beast_boys007</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'Group', url="https://t.me/MovieRosterGroup"
+                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/MovieRosterGroup"
                                 )
                         ],
                         [
@@ -53,15 +53,16 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('💘 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 𝙂𝙍𝙊𝙐𝙋 💘', url='https://t.me/MovieRosterGroup'),
-        
-
-
+        InlineKeyboardButton('🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url='https://t.me/Lucifer_Devil_AD'),
+        InlineKeyboardButton('⚠️ 𝙂𝙍𝙊𝙐𝙋', url ='https://t.me/MovieRosterGroup')
+    ],[
+        InlineKeyboardButton('♻️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ♻️', url='https://t.me/MovieRosterOfficial')
+    ],[
+        InlineKeyboardButton('💡 𝙃𝙀𝙇𝙋', callback_data="help"),
+        InlineKeyboardButton('🔐 𝘾𝙇𝙊𝙎𝙀', callback_data="close")
+       ]]
     
-       
-        
-    
-    
+    reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_photo(
         chat_id=update.chat.id,
@@ -71,4 +72,43 @@ async def start(bot, update):
         reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=update.message_id
+    )
+
+
+@Client.on_message(filters.command(["help"]) & filters.private, group=1)
+async def help(bot, update):
+    buttons = [[
+        InlineKeyboardButton('𝙃𝙊𝙈𝙀 ⚡', callback_data='start'),
+        InlineKeyboardButton('𝘼𝘽𝙊𝙐𝙏 🚩', callback_data='about')
+    ],[
+        InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀 🔐', callback_data='close')
+    ]]
     
+    reply_markup = InlineKeyboardMarkup(buttons)
+    
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.HELP_TEXT,
+        reply_markup=reply_markup,
+        parse_mode="html",
+        reply_to_message_id=update.message_id
+    )
+
+
+@Client.on_message(filters.command(["about"]) & filters.private, group=1)
+async def about(bot, update):
+    
+    buttons = [[
+        InlineKeyboardButton('𝙃𝙊𝙈𝙀 ⚡', callback_data='start'),
+        InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀 🔐', callback_data='close')
+    ]]
+    reply_markup = InlineKeyboardMarkup(buttons)
+    
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.ABOUT_TEXT,
+        reply_markup=reply_markup,
+        disable_web_page_preview=True,
+        parse_mode="html",
+        reply_to_message_id=update.message_id
+    )
