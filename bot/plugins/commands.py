@@ -28,7 +28,7 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = f"<b>{file_name}</b>\n \n<b>┈••✿ @beast_boys ✿••┈</b>\n \n<b>➠𝐂ʜᴀɴɴᴇʟ : @beast_boys007</b>",
+                caption = f"<b>{file_name}</b>\n \n<b>┈••✿ @MovieRosterGroup ✿••┈</b>\n \n<b>➠𝐂ʜᴀɴɴᴇʟ : ➖ @MovieRosterOfficial ➖</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -71,16 +71,8 @@ async def start(bot, update):
                 update.from_user.first_name),
         reply_markup=reply_markup,
         parse_mode="html",
-        reply_to_message_id=update.message_id
-    
-   await bot.send_photo
-           chat_id=update.chat.id,
-           photo="https://telegra.ph/file/c4bb363d54d3a348ff3c0.jpg",
-           caption=Translation.START_TEXT.format(
-                   update.from_user.first_name),
-           reply_markup=reply_markup,
-           parse_mode="html",
-           reply_to_message_id=update.message_id
+        reply_to_message_id=update.message_i
+
      )
 
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
