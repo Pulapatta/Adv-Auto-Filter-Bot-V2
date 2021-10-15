@@ -11,104 +11,101 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    
     try:
-        file_uid = update.command[1]
-    except IndexError:
-        file_uid = False
-    
+            file_uid = update.command[1]
+                except IndexError:
+                        file_uid = False
     if file_uid:
-        file_id, file_name, file_caption, file_type = await db.get_file(file_uid)
-        
+            file_id, file_name, file_caption, file_type = await db.get_file(file_uid)
         if (file_id or file_type) == None:
-            return
-        
+                    return
         caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
-        try:
-            await update.reply_cached_media(
-                file_id,
-                quote=True,
-                caption = f"<b>{file_name}</b>\n \n<b>┈••✿ @MovieRosterGroup ✿••┈</b>\n \n<b>➠𝐂ʜᴀɴɴᴇʟ : ➖ @MovieRosterOfficial ➖</b>",
-                parse_mode="html",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/MovieRosterGroup"
-                                )
-                        ],
-                        [
-                            InlineKeyboardButton
-                                (
-                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/MovieRosterOfficial"
-                                )
-                        ] 
-                    ]
-                )
-            )
-        except Exception as e:
-            await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode="html")
-            LOGGER(__name__).error(e)
-        return
-
+                try:
+                            await update.reply_cached_media(
+                                            file_id,
+                                                            quote=True,
+                                                                            caption = f"<b>{file_name}</b>\n \n<b>┈••✿ @beast_boys ✿••┈</b>\n \n<b>➠𝐂ʜᴀɴɴᴇʟ : @beast_boys007</b>",
+                                                                                            parse_mode="html",
+                                                                                                            reply_markup=InlineKeyboardMarkup(
+                                                                                                                                [
+                                                                                                                                                        [
+                                                                                                                                                                                    InlineKeyboardButton
+                                                                                                                                                                                                                    (
+                                                                                                                                                                                                                                                        '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/MovieRosterGroup"
+                                                                                                                                                                                                                                                                                        )
+                                                                                                                                                                                                                                                                                                                ],
+                                                                                                                                                                                                                                                                                                                                        [
+                                                                                                                                                                                                                                                                                                                                                                    InlineKeyboardButton
+                                                                                                                                                                                                                                                                                                                                                                                                    (
+                                                                                                                                                                                                                                                                                                                                                                                                                                        '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/MovieRosterOfficial"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        )
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ] 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    )
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        except Exception as e:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode="html")
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                LOGGER(__name__).error(e)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        return
     buttons = [[
-        InlineKeyboardButton('🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url='https://t.me/Lucifer_Devil_AD'),
-        InlineKeyboardButton('⚠️ 𝙂𝙍𝙊𝙐𝙋', url ='https://t.me/MovieRosterGroup')
-    ],[
-        InlineKeyboardButton('♻️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ♻️', url='https://t.me/MovieRosterOfficial')
-    ],[
-        InlineKeyboardButton('💡 𝙃𝙀𝙇𝙋', callback_data="help"),
-        InlineKeyboardButton('🔐 𝘾𝙇𝙊𝙎𝙀', callback_data="close")
-       ]]
-    
+            InlineKeyboardButton('🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url='https://t.me/Lucifer_Devil_AD'),
+                    InlineKeyboardButton('⚠️ 𝙂𝙍𝙊𝙐𝙋', url ='https://t.me/MovieRosterGroup')
+                        ],[
+                                InlineKeyboardButton('♻️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ♻️', url='https://t.me/MovieRosterOfficial')
+                                    ],[
+                                            InlineKeyboardButton('💡 𝙃𝙀𝙇𝙋', callback_data="help"),
+                                                    InlineKeyboardButton('🔐 𝘾𝙇𝙊𝙎𝙀', callback_data="close")
+                                                           ]]
     reply_markup = InlineKeyboardMarkup(buttons)
-    
     await bot.send_photo(
-        chat_id=update.chat.id,
-        photo="https://telegra.ph/file/27d6501b6b77236ece2a0.jpg",
-        caption=Translation.START_TEXT.format(
-                update.from_user.first_name),
-        reply_markup=reply_markup,
-        parse_mode="html",
-        reply_to_message_id=update.message_i
-
-     )
+            chat_id=update.chat.id,
+                    photo="https://telegra.ph/file/abdea39086bcffb2ea6ae.jpg",
+                            caption=Translation.START_TEXT.format(
+                                            update.from_user.first_name),
+                                                    reply_markup=reply_markup,
+                                                            parse_mode="html",
+                                                                    reply_to_message_id=update.message_id
+                                                                        )
+reply_markup = InlineKeyboardMarkup(buttons)
+    await bot.send_photo(
+                        chat_id=update.chat.id,
+                                                                                photo="https://telegra.ph/file/c4bb363d54d3a348ff3c0.jpg",
+                                                                                                                                                                                                        caption=Translation.START_TEXT.format(
+                                                                                                                                                                                                                                                                                                                                                                                                                                            update.from_user.first_name),
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                reply_markup=reply_markup,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                parse_mode="html",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                reply_to_message_id=update.message_id
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('𝙃𝙊𝙈𝙀 ⚡', callback_data='start'),
-        InlineKeyboardButton('𝘼𝘽𝙊𝙐𝙏 🚩', callback_data='about')
-    ],[
-        InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀 🔐', callback_data='close')
-    ]]
-    
+            InlineKeyboardButton('𝙃𝙊𝙈𝙀 ⚡', callback_data='start'),
+                    InlineKeyboardButton('𝘼𝘽𝙊𝙐𝙏 🚩', callback_data='about')
+                        ],[
+                                InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀 🔐', callback_data='close')
+                                    ]]
     reply_markup = InlineKeyboardMarkup(buttons)
-    
     await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.HELP_TEXT,
-        reply_markup=reply_markup,
-        parse_mode="html",
-        reply_to_message_id=update.message_id
-    )
-
+            chat_id=update.chat.id,
+                    text=Translation.HELP_TEXT,
+                            reply_markup=reply_markup,
+                                    parse_mode="html",
+                                            reply_to_message_id=update.message_id
+                                                )
 
 @Client.on_message(filters.command(["about"]) & filters.private, group=1)
 async def about(bot, update):
-    
     buttons = [[
-        InlineKeyboardButton('𝙃𝙊𝙈𝙀 ⚡', callback_data='start'),
-        InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀 🔐', callback_data='close')
-    ]]
-    reply_markup = InlineKeyboardMarkup(buttons)
-    
+            InlineKeyboardButton('𝙃𝙊𝙈𝙀 ⚡', callback_data='start'),
+                    InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀 🔐', callback_data='close')
+                        ]]
+                            reply_markup = InlineKeyboardMarkup(buttons)
     await bot.send_message(
-        chat_id=update.chat.id,
-        text=Translation.ABOUT_TEXT,
-        reply_markup=reply_markup,
-        disable_web_page_preview=True,
-        parse_mode="html",
-        reply_to_message_id=update.message_id
-    )
+            chat_id=update.chat.id,
+                    text=Translation.ABOUT_TEXT,
+                            reply_markup=reply_markup,
+                                    disable_web_page_preview=True,
+                                            parse_mode="html",
+                                                    reply_to_message_id=update.message_id
+                                                        )
