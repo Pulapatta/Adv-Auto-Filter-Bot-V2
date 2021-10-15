@@ -57,8 +57,8 @@ async def start(bot, update):
         
 
 
-    ],[
-        
+    
+       
         
     
     reply_markup = InlineKeyboardMarkup(buttons)
