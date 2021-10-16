@@ -9,10 +9,11 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
-@Client.on_message(filters.command(["start"]) & filters.private, group=1)
-async def start(bot, update):
 
 
+@Client.on_message(filters.command(["start"]) & filters.private, group=1) 
+
+async def start(bot, update): 
 
     update_channel = FORCESUB_CHANNEL 
 
@@ -58,7 +59,7 @@ Join on our channel to get movies ✅
 
             ) 
 
-            return   
+            return
     try:
         file_uid = update.command[1]
     except IndexError:
