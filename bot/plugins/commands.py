@@ -76,10 +76,7 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('𝙃𝙊𝙈𝙀 ⚡', callback_data='start'),
-        InlineKeyboardButton('𝘼𝘽𝙊𝙐𝙏 🚩', callback_data='about')
-    ],[
-        InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀 🔐', callback_data='close')
+        
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
