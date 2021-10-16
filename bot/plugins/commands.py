@@ -53,11 +53,8 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url='https://t.me/Rafeeq_Kunnimon'),
-        InlineKeyboardButton('⚠️ 𝙂𝙍𝙊𝙐𝙋', url ='https://t.me/MovieRosterGroup')
-    ],[
-        InlineKeyboardButton('♻️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ♻️', url='https://t.me/MovieRosterOfficial')
-    ],[
+        InlineKeyboardButton('💘 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 𝙂𝙍𝙊𝙐𝙋 💘', url='https://t.me/MovieRosterGroup'),
+        
         ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
