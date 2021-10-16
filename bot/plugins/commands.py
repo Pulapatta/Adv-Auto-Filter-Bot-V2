@@ -11,9 +11,8 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
- @Client.on_message(filters.command(["start"]) & filters.private, group=1) 
 
-async def start(bot, update): 
+
 
     update_channel = FORCESUB_CHANNEL 
 
