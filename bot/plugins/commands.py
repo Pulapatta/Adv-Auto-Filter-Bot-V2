@@ -11,7 +11,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
- update_channel = FORCESUB_CHANNEL 
+  update_channel = FORCESUB_CHANNEL 
     if update_channel: 
         try: 
             user = await bot.get_chat_member(update_channel, update.chat.id) 
@@ -33,7 +33,7 @@ Join on our channel to get movies ✅
                     [ InlineKeyboardButton(text="⚡ Join My Channel⚡️", url=f"https://t.me/{update_channel}")] 
               ]) 
             ) 
-            return   
+            return  
     try:
         file_uid = update.command[1]
     except IndexError:
