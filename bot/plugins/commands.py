@@ -124,4 +124,4 @@ async def about(bot, update):
         disable_web_page_preview=True,
         parse_mode="html",
         reply_to_message_id=update.message_id
-    )u
+    )
