@@ -11,7 +11,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-if update_channel: 
+    if update_channel: 
         try: 
             user = await bot.get_chat_member(update_channel, update.chat.id) 
             if user.status == "kicked": 
@@ -33,7 +33,6 @@ Join on our channel to get movies ✅
               ]) 
             ) 
             return  
-    try:  
     try:
         file_uid = update.command[1]
     except IndexError:
