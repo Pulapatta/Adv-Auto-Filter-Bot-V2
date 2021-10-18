@@ -4,15 +4,15 @@
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from bot import Translation # pylint: disable=import-error
+from bot import Translation, LOGGER # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
-from pyrogram.errors import UserNotParticipant
-from bot import FORCESUB_CHANNEL
+
 db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
     
+    try:
         file_uid = update.command[1]
     except IndexError:
         file_uid = False
@@ -24,102 +24,56 @@ async def start(bot, update):
             return
         
         caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
-        
-        if file_type == "document":
-        
-            await bot.send_document(
-                chat_id=update.chat.id,
-                document = file_id,
-                caption = f"<code>{file_name}</code>\n\n<b>➪ @mhd_thanzeer</b>",
-                parse_mode="html",
-                reply_to_message_id=update.message_id,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    '👨‍🔬 𝗢𝗡𝗪𝗘𝗥 👨‍🔬', url="https://t.me/mhd_thanzeer"
-                                )
-                        ]
-                    ]
-                )
-            )
-
-        elif file_type == "video":
-        
-            await bot.send_video(
-                chat_id=update.chat.id,
-                video = file_id,
-                caption = f"<code>{file_name}</code>\n\n<b>➪ @mhd_thanzeer</b>",
+        try:
+            await update.reply_cached_media(
+                file_id,
+                quote=True,
+                caption = f"<code>{file_name}</code>\n \n<b>➖ @MovieRosterOfficial ➖</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '👨‍🔬 𝗢𝗡𝗪𝗘𝗥 👨‍🔬', url="https://t.me/mhd_thanzeer"
+                                    '🎖️ 𝘑𝘰𝘪𝘯 𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 🎖️', url="https://t.me/MovieRosterGroup"
                                 )
-                        ]
-                    ]
-                )
-            )
-            
-        elif file_type == "audio":
-        
-            await bot.send_audio(
-                chat_id=update.chat.id,
-                audio = file_id,
-                caption = f"<code>{file_name}</code>\n\n<b>➪ @mhd_thanzeer</b>",
-                parse_mode="html",
-                reply_markup=InlineKeyboardMarkup(
-                    [
+                        ],
                         [
                             InlineKeyboardButton
                                 (
-                                    '👨‍🔬 𝗢𝗡𝗪𝗘𝗥 👨‍🔬', url="https://t.me/mhd_thanzeer"
+                                    '🧩 𝘚𝘩𝘢𝘳𝘦 𝘎𝘳𝘰𝘶𝘱 🧩', url="https://t.me/share/url?url=https://t.me/MovieRosterGroup"
                                 )
-                        ]
+                        ] 
                     ]
                 )
             )
-
-        else:
-            print(file_type)
-        
+        except Exception as e:
+            await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode="html")
+            LOGGER(__name__).error(e)
         return
 
     buttons = [[
-        InlineKeyboardButton('💘 𝗪𝗢𝗥𝗞𝗜𝗡𝗚 𝗚𝗥𝗢𝗨𝗣 💘', url='https://t.me/wolfpackmedia')
-    ]]
+        InlineKeyboardButton('💘 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 𝙂𝙍𝙊𝙐𝙋 💘', url='https://t.me/MovieRosterGroup'),
+        
+        ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_photo(
-
         chat_id=update.chat.id,
-
-        photo="https://telegra.ph/file/e42a430dbac1765e85e36.jpg",
-
+        photo="https://telegra.ph/file/abdea39086bcffb2ea6ae.jpg",
         caption=Translation.START_TEXT.format(
-
                 update.from_user.first_name),
-
         reply_markup=reply_markup,
-
         parse_mode="html",
-
         reply_to_message_id=update.message_id
-
     )
 
 
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('About 🚩', callback_data='about')
-    ],[
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -137,8 +91,8 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('𝙃𝙊𝙈𝙀 ⚡', callback_data='start'),
+        InlineKeyboardButton('𝘾𝙇𝙊𝙎𝙀 🔐', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     
