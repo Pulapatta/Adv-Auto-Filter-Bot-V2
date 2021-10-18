@@ -101,13 +101,7 @@ async def start(bot, update):
         chat_id=update.chat.id,
 
         PHOTO=[
-"https://telegra.ph/file/75a0da045f38660f7152c.jpg",
-
-"https://telegra.ph/file/60928de59e231ee428f0c.jpg",
-
-"https://telegra.ph/file/4b166f31517f7d6ee4d90.jpg,
-
-]
+"https://telegra.ph/file/75a0da045f38660f7152c.jpg","https://telegra.ph/file/60928de59e231ee428f0c.jpg","https://telegra.ph/file/4b166f31517f7d6ee4d90.jpg,]
 
         caption=Translation.START_TEXT.format(
 
