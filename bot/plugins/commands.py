@@ -57,7 +57,7 @@ Join on our channel to get movies ✅
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us : @movieshub_universal</b>",
+                caption = f"<code>{file_name}</code>\n\n<b>➪ @mhd_thanzeer</b>",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -65,10 +65,9 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎀 Share Group 🎀', url="https://t.me/share/url?url=https://t.me/Movieshubuniversal"
+                                    '👨‍🔬 𝗢𝗡𝗪𝗘𝗥 👨‍🔬', url="https://t.me/mhd_thanzeer"
                                 )
                         ]
-                       
                     ]
                 )
             )
@@ -78,14 +77,14 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us : @movieshub_universal</b>",
+                caption = f"<code>{file_name}</code>\n\n<b>➪ @mhd_thanzeer</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    ',👑 Our Channel 👑', url="https://t.me/HollywoodAre"
+                                    '👨‍🔬 𝗢𝗡𝗪𝗘𝗥 👨‍🔬', url="https://t.me/mhd_thanzeer"
                                 )
                         ]
                     ]
@@ -97,14 +96,14 @@ Join on our channel to get movies ✅
             await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption = f"<code>{file_name}</code>\n \n<b>♻️Join with us : @movieshub_universal</b>",
+                caption = f"<code>{file_name}</code>\n\n<b>➪ @mhd_thanzeer</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '🎖 Share Group 🎖', url="https://t.me/share/url?url=https://t.me/Movieshubuniversal"
+                                    '👨‍🔬 𝗢𝗡𝗪𝗘𝗥 👨‍🔬', url="https://t.me/mhd_thanzeer"
                                 )
                         ]
                     ]
@@ -117,23 +116,27 @@ Join on our channel to get movies ✅
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/Anandhukuttu'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Anandhu123555/Autofilter-look')
-    ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/Anandhukuttu')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
+        InlineKeyboardButton('💘 𝗪𝗢𝗥𝗞𝗜𝗡𝗚 𝗚𝗥𝗢𝗨𝗣 💘', url='https://t.me/wolfpackmedia')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
-    await bot.send_message(
+    await bot.send_photo(
+
         chat_id=update.chat.id,
-        text=Translation.START_TEXT.format(
+
+        photo="https://telegra.ph/file/e42a430dbac1765e85e36.jpg",
+
+        caption=Translation.START_TEXT.format(
+
                 update.from_user.first_name),
+
         reply_markup=reply_markup,
+
         parse_mode="html",
+
         reply_to_message_id=update.message_id
+
     )
 
 
