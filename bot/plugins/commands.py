@@ -100,7 +100,14 @@ async def start(bot, update):
 
         chat_id=update.chat.id,
 
-        photo="https://telegra.ph/file/c4bb363d54d3a348ff3c0.jpg",
+        PHOTO=[
+"https://telegra.ph/file/75a0da045f38660f7152c.jpg",
+
+"https://telegra.ph/file/60928de59e231ee428f0c.jpg",
+
+"https://telegra.ph/file/4b166f31517f7d6ee4d90.jpg,
+
+]
 
         caption=Translation.START_TEXT.format(
 
@@ -114,26 +121,7 @@ async def start(bot, update):
 
        
     )
-    reply_markup = InlineKeyboardMarkup(buttons)
-    
-    await bot.send_photo(
-
-        chat_id=update.chat.id,
-
-        photo=random.choice (PHOTO),"https://telegra.ph/file/2791865544cb418e271d0.jpg",
-
-        caption=Translation.START_TEXT.format(
-
-                update.from_user.first_name),
-
-        reply_markup=reply_markup,
-
-        parse_mode="html",
-
-        reply_to_message_id=update.message_id
-
-       
-    ) 
+     
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
