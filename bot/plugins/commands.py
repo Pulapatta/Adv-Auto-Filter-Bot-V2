@@ -34,7 +34,7 @@ Join on our channel to get movies ✅
 
 ⬇️Channel link⬇️ </b>""",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="⚡ Join My Channel⚡️", url=f"https://t.me/HollywoodAre}")]
+                    [ InlineKeyboardButton(text="⚡ Join My Channel⚡️", url=f"{update_channel}")]
               ])
             )
             return
