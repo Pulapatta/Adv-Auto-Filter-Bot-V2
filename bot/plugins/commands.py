@@ -13,25 +13,25 @@ db = Database()
 
 PHOTO=[
 
-"https://telegra.ph/file/d9dfa02842298dd00ba9a.jpg",
+"https://telegra.ph/file/ed0ceddbe19dfbe70acf1.jpg",
 
-"https://telegra.ph/file/5dcf938111a1f1e264bb5.jpg",
+"https://telegra.ph/file/6956ce711d063f536782a.jpg",
 
-"https://telegra.ph/file/9fc52e1f8077e4726cc8d.jpg",
+"https://telegra.ph/file/fb4e8bed86f7ea92e0435.jpg",
 
-"https://telegra.ph/file/07c48b62a990b2e7db0b7.jpg",
+"https://telegra.ph/file/8b4e758f22730fa033411.jpg",
 
-"https://telegra.ph/file/6cdd87c1da1ca2a68313c.jpg",
+"https://telegra.ph/file/e0fc782f087961e6af10c.jpg",
 
-"https://telegra.ph/file/002841952fceb7c2b706a.jpg",
+"https://telegra.ph/file/e1f07efcf1a87aa1ac602.jpg",
 
-"https://telegra.ph/file/f484cea06ac6ab3434537.jpg",
+"https://telegra.ph/file/55ca2ab2ea0603a6a6afe.jpg",
 
-"https://telegra.ph/file/924bd02e189eb6423e300.jpg",
+"https://telegra.ph/file/dfb1869e29c829c6ef5ab.jpg",
 
-"https://telegra.ph/file/f94fc74d20435944ba675.jpg",
+"https://telegra.ph/file/26dbc5d60fd65c8fa0266.jpg",
 
-"https://telegra.ph/file/8ea777d7e06325e1ab274.jpg",
+"https://telegra.ph/file/82e69939419ec54654de8.jpg",
 
 ]
 
