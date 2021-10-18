@@ -100,18 +100,6 @@ async def start(bot, update):
 
         chat_id=update.chat.id,
 
-        photo="https://telegra.ph/file/e42a430dbac1765e85e36.jpg",
-
-        caption=Translation.START_TEXT.format(
-
-                update.from_user.first_name),
-
-        reply_markup=reply_markup,
-
-        parse_mode="html",
-
-        reply_to_message_id=update.message_id
-
         photo="https://telegra.ph/file/c4bb363d54d3a348ff3c0.jpg",
 
         caption=Translation.START_TEXT.format(
@@ -124,6 +112,7 @@ async def start(bot, update):
 
         reply_to_message_id=update.message_id
 
+       
     )
 
 
