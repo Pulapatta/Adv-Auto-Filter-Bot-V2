@@ -116,11 +116,11 @@ async def start(bot, update):
     )
     reply_markup = InlineKeyboardMarkup(buttons)
     
-    photo=random.choice (PHOTO),(
+    await bot.send_photo(
 
         chat_id=update.chat.id,
 
-        photo="https://telegra.ph/file/2791865544cb418e271d0.jpg",
+        photo=random.choice (PHOTO),"https://telegra.ph/file/2791865544cb418e271d0.jpg",
 
         caption=Translation.START_TEXT.format(
 
