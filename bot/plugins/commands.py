@@ -93,6 +93,12 @@ Join on our channel to get movies ✅
                                     '🎖️ 𝘑𝘰𝘪𝘯 𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 🎖️', url="https://t.me/MovieRosterGroup"
                                 )
                         ]
+                        [
+                            InlineKeyboardButton
+                                (
+                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/MovieRosterGroup"
+                                )
+                        ]
                     ]
                 )
             )
@@ -112,6 +118,12 @@ Join on our channel to get movies ✅
                                     '🎖️ 𝘑𝘰𝘪𝘯 𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 🎖️', url="https://t.me/MovieRosterGroup"
                                 )
                         ]
+                        [
+                            InlineKeyboardButton
+                                (
+                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/MovieRosterGroup"
+                                )
+                        ]
                     ]
                 )
             )
@@ -129,6 +141,12 @@ Join on our channel to get movies ✅
                             InlineKeyboardButton
                                 (
                                     '🎖️ 𝘑𝘰𝘪𝘯 𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 🎖️', url="https://t.me/MovieRosterGroup"
+                                )
+                        ]
+                        [
+                            InlineKeyboardButton
+                                (
+                                    '🧩 Share Group 🧩', url="https://t.me/share/url?url=https://t.me/MovieRosterGroup"
                                 )
                         ]
                     ]
