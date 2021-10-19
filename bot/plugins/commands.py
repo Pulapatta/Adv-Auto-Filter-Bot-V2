@@ -92,7 +92,7 @@ Join on our channel to get movies ✅
                                 (
                                     '🎖️ 𝘑𝘰𝘪𝘯 𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 🎖️', url="https://t.me/MovieRosterGroup"
                                 )
-                        ]
+                        ],
                         [
                             InlineKeyboardButton
                                 (
@@ -117,7 +117,7 @@ Join on our channel to get movies ✅
                                 (
                                     '🎖️ 𝘑𝘰𝘪𝘯 𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 🎖️', url="https://t.me/MovieRosterGroup"
                                 )
-                        ]
+                        ],
                         [
                             InlineKeyboardButton
                                 (
@@ -142,7 +142,7 @@ Join on our channel to get movies ✅
                                 (
                                     '🎖️ 𝘑𝘰𝘪𝘯 𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 🎖️', url="https://t.me/MovieRosterGroup"
                                 )
-                        ]
+                        ],
                         [
                             InlineKeyboardButton
                                 (
