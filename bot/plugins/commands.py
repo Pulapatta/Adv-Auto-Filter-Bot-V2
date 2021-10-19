@@ -82,7 +82,7 @@ Join on our channel to get movies ✅
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = f"<code>{file_name}</code>\n\n<b>➪ @mhd_thanzeer</b>",
+                caption = f"<code>{file_name}</code>\n\n<b>➖ @MovieRosterOfficial ➖</b>",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -90,7 +90,7 @@ Join on our channel to get movies ✅
                         [
                             InlineKeyboardButton
                                 (
-                                    '👨‍🔬 𝗢𝗡𝗪𝗘𝗥 👨‍🔬', url="https://t.me/mhd_thanzeer"
+                                    '🎖️ 𝘑𝘰𝘪𝘯 𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 🎖️', url="https://t.me/MovieRosterGroup"
                                 )
                         ]
                     ]
@@ -102,14 +102,14 @@ Join on our channel to get movies ✅
             await bot.send_video(
                 chat_id=update.chat.id,
                 video = file_id,
-                caption = f"<code>{file_name}</code>\n\n<b>➪ @mhd_thanzeer</b>",
+                caption = f"<code>{file_name}</code>\n\n<b>➖ @MovieRosterOfficial ➖</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '👨‍🔬 𝗢𝗡𝗪𝗘𝗥 👨‍🔬', url="https://t.me/mhd_thanzeer"
+                                    '🎖️ 𝘑𝘰𝘪𝘯 𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 🎖️', url="https://t.me/MovieRosterGroup"
                                 )
                         ]
                     ]
@@ -121,14 +121,14 @@ Join on our channel to get movies ✅
             await bot.send_audio(
                 chat_id=update.chat.id,
                 audio = file_id,
-                caption = f"<code>{file_name}</code>\n\n<b>➪ @mhd_thanzeer</b>",
+                caption = f"<code>{file_name}</code>\n\n<b>➖ @MovieRosterOfficial ➖</b>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '👨‍🔬 𝗢𝗡𝗪𝗘𝗥 👨‍🔬', url="https://t.me/mhd_thanzeer"
+                                    '🎖️ 𝘑𝘰𝘪𝘯 𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 🎖️', url="https://t.me/MovieRosterGroup"
                                 )
                         ]
                     ]
